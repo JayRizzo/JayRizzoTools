@@ -3,11 +3,11 @@
 # =============================================================================
 # Created Syst: macOS Monterey 12.4 (21F79) Kernel: Darwin 21.5.0
 # Created Plat: Python 3.9.5 ('v3.9.5:0a7dcbdb13', 'May  3 2021 13:17:02')
-# Created By  : jkirchoff
+# Created By  : Jeromie Kirchoff
 # Created Date: Mon Jun 13 03:22:59 2022 CDT
-# Last ModDate: Tue Jun 21 21:01:26 2022 CDT
+# Last ModDate: Wed Jun 22 13:35:16 2022 CDT
 # =============================================================================
-# Notes: Final Version
+# Notes:
 # =============================================================================
 
 from datetime import datetime, timezone
@@ -17,8 +17,7 @@ from getpass import getuser
 
 def prPyHeader():
     a = MacOSName().getCurrentSystemInfo()
-    print(f"""
-#!/usr/bin/env python3
+    print(f"""#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # =============================================================================
 # Created Syst: {a[0]} {a[1]} {a[2]} ({a[3]}) Kernel: {platform.system()} {platform.release()}
