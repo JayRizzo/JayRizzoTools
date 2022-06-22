@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # =============================================================================
-# Created Syst: macOS Monterey 12.4 (21F79)
+# Created Syst: macOS Monterey 12.4 (21F79) Kernel: Darwin 21.5.0
 # Created Plat: Python 3.9.5 ('v3.9.5:0a7dcbdb13', 'May  3 2021 13:17:02')
-# Created By  : Jeromie Kirchoff
+# Created By  : jkirchoff
 # Created Date: Mon Jun 13 03:22:59 2022 CDT
-# Last ModDate: Sat Jun 18 16:18:41 2022 CDT
+# Last ModDate: Tue Jun 21 21:01:26 2022 CDT
 # =============================================================================
 # Notes: Final Version
 # =============================================================================
