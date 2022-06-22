@@ -12,7 +12,7 @@
 
 from datetime import datetime, timezone
 import platform
-from pyMacOsNameClass import MacOSName
+from pyMacOsName import MacOSName
 from getpass import getuser
 
 def prPyHeader():
