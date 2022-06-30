@@ -1,3 +1,15 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# =============================================================================
+# Created Syst: macOS Monterey 12.4 (21F79) Kernel: Darwin 21.5.0
+# Created Plat: Python 3.9.5 ('v3.9.5:0a7dcbdb13', 'May  3 2021 13:17:02')
+# Created By  : Jeromie Kirchoff
+# Created Date: Wed Jun 29 20:00:35 2022 CDT
+# Last ModDate: Wed Jun 29 23:45:35 2022 CDT
+# =============================================================================
+# Notes:
+# =============================================================================
+
 import glob
 from getpass import getuser
 from os.path import exists as filepathexist
@@ -10,7 +22,7 @@ FontList = []
 GLOBList = []
 
 def getFontList():
-    """Compile list of all known fonts on the MacOS into a list.
+    """Compile a list of all known fonts on the MacOS into a list.
     """
     FontPath = r'/System/Library/Fonts/Supplemental'
     exists = filepathexist(FontPath)
