@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 # =============================================================================
 # Created Syst: macOS Monterey 12.4 (21F79) Kernel: Darwin 21.5.0
-# Created Plat: Python 3.9.5 ('v3.9.5:0a7dcbdb13', 'May  3 2021 13:17:02')
+# Created Plat: Python 3.10.5 ('v3.10.5:f377153967', 'Jun  6 2022 12:36:10')
 # Created By  : Jeromie Kirchoff
 # Created Date: Mon Jun 13 15:22:59 2022 CDT
-# Last ModDate: Tue Jun 21 20:59:51 2022 CDT
+# Last ModDate: Tue Jul 12 16:51:28 2022 CDT
 # =============================================================================
-# Notes: Version 2 Class
+# Notes: Generate this MacOS SysName ('macOS', 'Monterey', '12.4', '21F79')
 # =============================================================================
 
 import subprocess
