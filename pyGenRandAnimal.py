@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 # =============================================================================
 # Created Syst: macOS Monterey 12.4 (21F79) Kernel: Darwin 21.5.0
-# Created Plat: Python 3.9.5 ('v3.9.5:0a7dcbdb13', 'May  3 2021 13:17:02')
+# Created Plat: Python 3.10.5 ('v3.10.5:f377153967', 'Jun  6 2022 12:36:10')
 # Created By  : Jeromie Kirchoff
 # Created Date: Mon Jun 13 03:22:59 2022 CDT
-# Last ModDate: Wed Jun 22 13:35:16 2022 CDT
+# Last ModDate: Tue Jul 12 16:14:33 2022 CDT
 # =============================================================================
-# Notes: Select a random choice of Animals.
+# Notes: Generate a Random Animal/Fish/Insect/Reptile Name.
 # =============================================================================
 
 from random import choice

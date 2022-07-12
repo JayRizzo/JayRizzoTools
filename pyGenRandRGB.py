@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # =============================================================================
-# Created On  : MAC OSX High Sierra 10.13.6 (17G65)
-# Created On  : Python 3.7.0
+# Created Syst: macOS Monterey 12.4 (21F79) Kernel: Darwin 21.5.0
+# Created Plat: Python 3.10.5 ('v3.10.5:f377153967', 'Jun  6 2022 12:36:10')
 # Created By  : Jeromie Kirchoff
 # Created Date: Mon Jun 11 12:46:00 PDT 2022
+# Last ModDate: Tue Jul 12 16:12:14 2022 CDT
 # =============================================================================
+# Notes:
+# =============================================================================
+
 from random import randrange
 
 def GenerateRandomRGB():
