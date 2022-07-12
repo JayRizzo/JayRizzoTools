@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 # =============================================================================
 # Created Syst: macOS Monterey 12.4 (21F79) Kernel: Darwin 21.5.0
-# Created Plat: Python 3.9.5 ('v3.9.5:0a7dcbdb13', 'May  3 2021 13:17:02')
+# Created Plat: Python 3.10.5 ('v3.10.5:f377153967', 'Jun  6 2022 12:36:10')
 # Created By  : Jeromie Kirchoff
 # Created Date: Thu Jun 15 23:31:01 2022 CDT
-# Last ModDate: Wed Jun 29 23:23:34 2022 CDT
+# Last ModDate: Fri Jul  1 13:31:07 2022 CDT
 # =============================================================================
 # Notes: https://stackoverflow.com/a/72642393/1896134
 # Notes: Doesn't work on SVG images at this time.
