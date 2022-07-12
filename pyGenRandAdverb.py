@@ -7,7 +7,7 @@
 # Created Date: Mon Jun 13 03:22:59 2022 CDT
 # Last ModDate: Fri Jul  1 13:31:07 2022 CDT
 # =============================================================================
-# Notes:
+# Notes: Generate a Random Adverb.
 # =============================================================================
 
 from random import choice
