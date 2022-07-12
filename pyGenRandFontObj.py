@@ -48,6 +48,7 @@ def getFontList():
         FontPath = fr'{FontPath}/*.*'
         List_GLOB = glob.glob(FontPath)
         FontList.extend(List_GLOB)
+        FontList.sort()
     FontList.remove('/System/Library/Fonts/Apple Color Emoji.ttc')  # Removed for Breaking when used by PIL.
     return FontList
 
@@ -56,6 +57,6 @@ if __name__ == '__main__':
     a = choice(getFontList())
     FontNameStr = a.split('/')[-1].split('.')[0]
     print(f"Your Random Font: {FontNameStr}\tPath: {a}")
-    # for i in sorted(getFontList()):
-    #     FontNameStr = i.split('/')[-1].split('.')[0]
-    #     print(f"CurrentFontName: {FontNameStr}: {i}")
+    for i in sorted(getFontList()):
+        FontNameStr = i.split('/')[-1].split('.')[0]
+        print(f"CurrentFontName: {FontNameStr}: {i}")
