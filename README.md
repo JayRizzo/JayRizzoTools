@@ -17,7 +17,7 @@ Hand Dealt: [(' A', '♠'), ('10', '♥'), (' 9', '♣'), (' 3', '♥'), (' J', 
 
 ## [pyGenRand256Color.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRand256Color.py)
 * Generate a Random String containing information of the Standard 256 colors.
-```
+```python3
 from random import choice
 import pyGenRand256Color
 
@@ -39,16 +39,57 @@ DeepSkyBlue4
 ```
 ## [pyGenRandAdjective.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandAdjective.py)
 * Generate a Random String containing an Adjective.
+```python3
+from random import choice
+import pyGenRandAdjective
 
+a = pyGenRandAdjective
+b = choice(a.adjectives)
+print(b)
+
+# Returns:
+Tender-Hearted
+```
 ## [pyGenRandAdverb.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandAdverb.py)
 * Generate a Random String containing an Adverb.
+```python3
+from random import choice
+import pyGenRandAdverb
+
+a = pyGenRandAdverb
+b = choice(a.adverbs)
+print(b)
+
+# Returns:
+Utterly
+```
 
 ## [pyGenRandAnimal.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandAnimal.py)
 * Generate a Random String containing an Animal.
+```python3
+from random import choice
+import pyGenRandAnimal
 
+a = pyGenRandAnimal
+b = choice(a.animals)
+print(b)
+
+# Returns:
+Flamingo
+```
 ## [pyGenRandCompanieName.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandCompanieName.py)
 * Generate a Random String containing a random company name.
+```python3
+from random import choice
+import pyGenRandCompanieName
 
+a = pyGenRandCompanieName
+b = choice(a.companies)
+print(b)
+
+# Returns:
+American Electric Power
+```
 ## [pyGenRandEmoji.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandEmoji.py)
 * Generate a Random String containing a random Emoji Character.
 
