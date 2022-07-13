@@ -5,9 +5,38 @@ Aggregation of Scripts to make life a bit more interesting.
 ## [pyGenHand.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenHand.py)
 * Generate a Random Hand of x# of cards. (poker, blackjack)
 
+```python3
+import pyGenHand
+
+a = pyGenHand.Poker()
+a.dealHand(5)
+
+# Returns: 
+Hand Dealt: [(' A', '♠'), ('10', '♥'), (' 9', '♣'), (' 3', '♥'), (' J', '♦')]
+```
+
 ## [pyGenRand256Color.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRand256Color.py)
 * Generate a Random String containing information of the Standard 256 colors.
+```
+from random import choice
+import pyGenRand256Color
 
+
+a = pyGenRand256Color
+b = dict(choice(a.two56colors))
+print(b['colorId'])
+print(b['name'])
+print(b['hexString'])
+print(b['rgb'])
+print(b['hsl'])
+
+# Returns:
+24
+DeepSkyBlue4
+#005f87
+{'r': 0, 'g': 95, 'b': 135}
+{'h': 197.777777777778, 's': 100, 'l': 26}
+```
 ## [pyGenRandAdjective.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandAdjective.py)
 * Generate a Random String containing an Adjective.
 
