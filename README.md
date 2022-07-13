@@ -92,7 +92,38 @@ American Electric Power
 ```
 ## [pyGenRandEmoji.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandEmoji.py)
 * Generate a Random String containing a random Emoji Character.
+```python3
+from random import choice
+import unicodedata
+import pyGenRandEmoji
+from pyGenRandEmoji import emojis
 
+emoji = choice(emojis)
+begwrap = "{"
+endwrap = "}"
+# https://docs.python.org/3/howto/unicode.html?highlight=unicode%20howto#the-string-type
+# https://unicode.org/emoji/charts-13.0/emoji-released.html
+# NOTE: Sometimes throws an error "No such name"  https://stackoverflow.com/a/24553272/1896134
+print(f"Emoji:\t\t\t\t{ascii(emoji)}")
+print(f"HEX:\t\t\t\t{emoji.encode('UTF-8')}")
+print(f"Unicode Name:\t\t'\\N{begwrap}{unicodedata.name(emoji)}{endwrap}'")
+print(f"Returns:\t\t\t{emoji}")
+
+# Returns:
+Emoji:              '\U0001f63a'
+HEX:                b'\xf0\x9f\x98\xba'  
+Unicode Name:       '\N{SMILING CAT FACE WITH OPEN MOUTH}'
+Returns:            😺
+
+# Checking: 
+print('\U0001f63a')
+print(bytes(b'\xf0\x9f\x98\xba').decode('utf-8'))
+print('\N{SMILING CAT FACE WITH OPEN MOUTH}')
+# All Return the expected emoji:
+'😺'
+
+
+```
 ## [pyGenRandFontObj.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandFontObj.py)
 * Generate a Random String containing a random Font from your Mac Machine.
 
