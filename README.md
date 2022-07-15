@@ -185,9 +185,10 @@ print(c)
 * Generate a Random String containing a random HEX.
 
 ```python3
-from pyGenRandHEX import generateRandomHEX
+from pyGenRandHEX import GenerateRandomHEX
 
-print(f"Your Random HEX Color is: {generateRandomHEX()}")
+a = GenerateRandomHEX()
+print(f"Your Random HEX Color is: {a}  'GenerateRandomHEX()'")
 
 # Results Respectively for each print statement as Follows:
 Your Random HEX Color is: e4ad64
@@ -197,7 +198,19 @@ Your Random HEX Color is: e4ad64
 * Generate a Random Tuple containing a random set of 6 numbers.
 
 ```python3
+from pyGenRandRGB import GenerateRandomRGB
 
+a = GenerateRandomRGB()
+print(f"Your Random RGB Color is: {a}  'GenerateRandomRGB()'")
+print(f"R: {a[0]}")
+print(f"G: {a[1]}")
+print(f"B: {a[2]}")
+
+# Results Respectively for each print statement as Follows:
+Your Random RGB Color is: (62, 38, 216)  'GenerateRandomRGB()'
+R: 62
+G: 38
+B: 216
 ```
 
 ## [pyGenRandStatement.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandStatement.py)
