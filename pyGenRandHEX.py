@@ -13,7 +13,7 @@
 from random import choice
 from string import hexdigits
 
-def generateRandomHEX():
+def GenerateRandomHEX():
     randomHEX = [0]*6  # A list variable to hold empty list.
     i = 0  # Declare and set loop counter to 0.
     for i in range(0,6):
@@ -22,5 +22,6 @@ def generateRandomHEX():
     return f"{str1}"
 
 if __name__ == '__main__':
-    print(f"Your Random HEX Color is: {generateRandomHEX()}")
+    a = GenerateRandomHEX()
+    print(f"Your Random HEX Color is: {a}  'GenerateRandomHEX()'")
 
