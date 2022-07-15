@@ -17,6 +17,7 @@ Hand Dealt: [(' A', '♠'), ('10', '♥'), (' 9', '♣'), (' 3', '♥'), (' J', 
 
 ## [pyGenRand256Color.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRand256Color.py)
 * Generate a Random String containing information of the Standard 256 colors.
+
 ```python3
 from random import choice
 import pyGenRand256Color
@@ -143,6 +144,9 @@ a = choice(pyGenRandFontObj.getFontList())
 FontNameStr = a.split('/')[-1].split('.')[0]
 print(f"Your Random Font: {FontNameStr}\tPath: {a}")
 
+# Results:
+Your Random Font: Khula-SemiBold    Path: ~/Library/Fonts/Khula-SemiBold.ttf
+
 # OR if you want to know every font you have
 # Minus one ('/System/Library/Fonts/Apple Color Emoji.ttc')  Removed for Breaking when used by PIL.
 
@@ -150,36 +154,88 @@ for i in sorted(pyGenRandFontObj.getFontList()):
     FontNameStr = i.split('/')[-1].split('.')[0]
     print(f"CurrentFontName: {FontNameStr}: {i}")
 
+# Results:
+CurrentFontName: Arial Unicode: /Library/Fonts/Arial Unicode.ttf
+... (list all fonts)
+CurrentFontName: ubuntu: ~/Library/Fonts/ubuntu.ttf
 ```
 
 ## [pyGenRandLuckyNumbers.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandLuckyNumbers.py)
 * Generate a Random Tuple containing a random set of 6 numbers.
 
+```python3
+from pyGenRandLuckyNumbers import generateLuckyNumbers
+
+a = generateLuckyNumbers()[0]  # Returns Comma separated string
+print(a)
+
+b = generateLuckyNumbers()[1]  # Returns [LIST]
+print(b)
+
+c = generateLuckyNumbers()     # Returns tuple(Comma separated string & [LIST])
+print(c)
+
+# Results Respectively for each print statement as Follows:
+07, 00, 49, 13, 23, 37
+['32', '13', '33', '22', '16', '53']
+('48, 21, 40, 46, 43, 13', ['48', '21', '40', '46', '43', '13'])
+```
+
 ## [pyGenRandHEX.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandHEX.py)
 * Generate a Random String containing a random HEX.
+
+```python3
+
+```
 
 ## [pyGenRandRGB.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandRGB.py)
 * Generate a Random Tuple containing a random set of 6 numbers.
 
+```python3
+
+```
+
 ## [pyGenRandStatement.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandStatement.py)
 * Generate a Random String containing a random phrase.
+
+```python3
+
+```
 
 ## [pyGetSystemUpTime.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGetSystemUpTime.py)
 * Generate your system uptime in a readable format from epoch time.
 
+```python3
+
+```
+
 ## [pyHeaderMac.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyHeaderMac.py)
 * Generate a standard python header
+
+```python3
+
+```
 
 ## [pyImageDownloader.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyImageDownloader.py)
 * Easily Download images from other sites.  * Supports (JPG/JPEG/PNG/TIFF/GIF/)
 
+```python3
+
+```
+
 ## [pyListChecker.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyListChecker.py)
 * Generate a true or false if your list is containing another list.  Needed to prevent iteration problems when looping over lists.
+
+```python3
+
+```
 
 ## [pyMacOsName.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyMacOsName.py)
 * Generate your Mac Operating System Name.  Using `sw_vers` into python variables.
 
+```python3
 
+```
 
 # Shell
 This is a bash script to download the google fonts to your current working directory
@@ -200,26 +256,32 @@ This is a bash script to download the google fonts to your current working direc
 > 1. `bash GoogleFontList.sh`
 >    1. Wait for downloads to complete
 > 1. Show all Fonts in current Directory & SubDirectories
+
 ```bash
 # Show all Fonts in current Directory & SubDirectories
 find . -name '*.otf'  ## OpenType® font
 find . -name '*.ttf'  ## TrueType® font
 find . -name '*.ttc'  ## TrueType® font collection
 ```
+
 > 6. Move all Fonts from Directory & SubDirectories >> into Download Fonts Folder
+
 ```bash
 # Move all Fonts from Directory & SubDirectories >> into Download Fonts Folder
 find -s . -type f -name "*.otf" -exec cp {} ~/Downloads/Fonts \; -print
 find -s . -type f -name "*.ttf" -exec cp {} ~/Downloads/Fonts \; -print
 find -s . -type f -name "*.ttc" -exec cp {} ~/Downloads/Fonts \; -print
 ```
+
 > 7. Move all Fonts from Download Fonts Folder >> into ~/Library/Fonts/
+
 ```bash
 # Move all Fonts from Download Fonts Folder >> into ~/Library/Fonts/
 find -s ~/Downloads/Fonts -type f -name "*.otf" -exec cp {}  ~/Library/Fonts/ \; -print
 find -s ~/Downloads/Fonts -type f -name "*.ttf" -exec cp {}  ~/Library/Fonts/ \; -print
 find -s ~/Downloads/Fonts -type f -name "*.ttc" -exec cp {}  ~/Library/Fonts/ \; -print
 ```
+
 > 8. `open /System/Applications/Font\ Book.app`
 >    1. Wait for system to recognize the new fonts.
 >    1. Right Click on Font Name
@@ -229,4 +291,3 @@ find -s ~/Downloads/Fonts -type f -name "*.ttc" -exec cp {}  ~/Library/Fonts/ \;
 >    1. When Asked to move duplicates to TRASH -> Select `OK`
 
 ### Complete. You now have over a Thousand New Font Variations.
-
