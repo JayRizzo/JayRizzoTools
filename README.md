@@ -185,7 +185,12 @@ print(c)
 * Generate a Random String containing a random HEX.
 
 ```python3
+from pyGenRandHEX import generateRandomHEX
 
+print(f"Your Random HEX Color is: {generateRandomHEX()}")
+
+# Results Respectively for each print statement as Follows:
+Your Random HEX Color is: e4ad64
 ```
 
 ## [pyGenRandRGB.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandRGB.py)
