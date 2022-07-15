@@ -28,7 +28,7 @@ def generateEmojiHEX():
         randomHEX[i] = choice(hexdigits[0:16])
     str1 = ''.join(str(e) for e in randomHEX)
     str1 = f"\'\\U{str1}\'"
-    return
+    return f"{str1}"
 
 if __name__ == '__main__':
     print(f"Your Random HEX Color is: {generateRandomHEX()}")
