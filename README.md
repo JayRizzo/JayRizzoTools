@@ -37,8 +37,10 @@ DeepSkyBlue4
 {'r': 0, 'g': 95, 'b': 135}
 {'h': 197.777777777778, 's': 100, 'l': 26}
 ```
+
 ## [pyGenRandAdjective.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandAdjective.py)
 * Generate a Random String containing an Adjective.
+
 ```python3
 from random import choice
 import pyGenRandAdjective
@@ -50,8 +52,10 @@ print(b)
 # Returns:
 Tender-Hearted
 ```
+
 ## [pyGenRandAdverb.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandAdverb.py)
 * Generate a Random String containing an Adverb.
+
 ```python3
 from random import choice
 import pyGenRandAdverb
@@ -66,6 +70,7 @@ Utterly
 
 ## [pyGenRandAnimal.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandAnimal.py)
 * Generate a Random String containing an Animal.
+
 ```python3
 from random import choice
 import pyGenRandAnimal
@@ -77,8 +82,10 @@ print(b)
 # Returns:
 Flamingo
 ```
+
 ## [pyGenRandCompanieName.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandCompanieName.py)
 * Generate a Random String containing a random company name.
+
 ```python3
 from random import choice
 import pyGenRandCompanieName
@@ -90,8 +97,10 @@ print(b)
 # Returns:
 American Electric Power
 ```
+
 ## [pyGenRandEmoji.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandEmoji.py)
 * Generate a Random String containing a random Emoji Character.
+
 ```python3
 from random import choice
 import unicodedata
@@ -121,11 +130,27 @@ print(bytes(b'\xf0\x9f\x98\xba').decode('utf-8'))
 print('\N{SMILING CAT FACE WITH OPEN MOUTH}')
 # All Return the expected emoji:
 '😺'
-
-
 ```
+
 ## [pyGenRandFontObj.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandFontObj.py)
 * Generate a Random String containing a random Font from your Mac Machine.
+
+```python3
+from random import choice
+import pyGenRandFontObj
+
+a = choice(pyGenRandFontObj.getFontList())
+FontNameStr = a.split('/')[-1].split('.')[0]
+print(f"Your Random Font: {FontNameStr}\tPath: {a}")
+
+# OR if you want to know every font you have
+# Minus one ('/System/Library/Fonts/Apple Color Emoji.ttc')  Removed for Breaking when used by PIL.
+
+for i in sorted(pyGenRandFontObj.getFontList()):
+    FontNameStr = i.split('/')[-1].split('.')[0]
+    print(f"CurrentFontName: {FontNameStr}: {i}")
+
+```
 
 ## [pyGenRandLuckyNumbers.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandLuckyNumbers.py)
 * Generate a Random Tuple containing a random set of 6 numbers.
