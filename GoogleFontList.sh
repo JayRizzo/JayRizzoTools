@@ -1,3 +1,12 @@
+cd ~/Documents
+mkdir googaleefonts
+cd googaleefonts
+
+# open 7 terminal windows and cd ~/Documents/googaleefonts 
+# be sure to navigate to the same folder for all your terminal windows then 
+# then run these in batches of 250 at a time in each terminal window. and in less than about 4 mins you will have all fonts from dagoogz
+# End size is somewhere about 3.72 GB of da googaleefonts folder.  This keeps the zips for ease of moving to another computer without redownloading them.
+
 curl "https://fonts.google.com/download?family=ABeeZee" -o ./abeezee.zip ; unzip ./abeezee.zip -d ./ABeeZee &
 curl "https://fonts.google.com/download?family=Abel" -o ./abel.zip; unzip ./abel.zip -d ./Abel &
 curl "https://fonts.google.com/download?family=Abhaya+Libre" -o ./abhayalibre.zip; unzip ./abhayalibre.zip -d ./AbhayaLibre &
