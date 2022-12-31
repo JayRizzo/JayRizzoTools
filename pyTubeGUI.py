@@ -96,7 +96,7 @@ class App(object):
         self.row3 = [ sg.B('Clear Text', button_color=(sg.YELLOWS[1], sg.BLUES[1]), key='-CLRTXTBTN-', size=(20,1), expand_x=True)
                           , sg.VSep()
                           , sg.B('Exit', button_color=(sg.YELLOWS[1], sg.BLUES[1]), key='-EXITBTN-', size=(20,1), expand_x=True)]
-        self.row4 = [sg.Text('EXAMPLE URL: https://www.youtube.com/watch?v=3k76FCjHKUM    The extra URL &params= do not cause issues.\n                   OR:          3k76FCjHKUM          Both options will work.', key='-DISPLAYTEXT-')]
+        self.row4 = [sg.Text('EXAMPLE URL: https://www.youtube.com/watch?v=RY9TbZMlTaI    The extra URL &params= do not cause issues.\n                   OR:          RY9TbZMlTaI          Both options will work.', key='-DISPLAYTEXT-')]
         self.row5 = [sg.Frame('Info', self.BOX_FRAME_LAYOUT, element_justification='center', font='Consolas 22', title_color='SkyBlue', size=(250,80), expand_x=True, expand_y=True)]
         self.LAYOUT = [
                           self.row1
