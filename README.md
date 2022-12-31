@@ -2,7 +2,7 @@
 Aggregation of Scripts to make life a bit more interesting.
 
 # Python
-## [pyGenHand.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyTubeGUI.py)
+## [pyTubeGUI.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyTubeGUI.py)
 * Download Any Youtube Video to an Audio or Video File Format.
 * Automatically Creates And Download Into These Folders
   - Audio Files In MUSIC FOLDER: ~/Music/JayRizzoDL
