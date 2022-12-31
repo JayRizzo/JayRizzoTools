@@ -82,6 +82,9 @@ class App(object):
                                     [sg.T('Download Folder Locations:')]
                                   , [sg.Text(f"MUSIC FOLDER: {self.MUSIC_FOLDER}", key='-MUSICFOLDERTEXT-', font='Consolas 11')]
                                   , [sg.Text(f"VIDEO FOLDER: {self.VIDEO_FOLDER}", key='-VIDEOFOLDERTEXT-', font='Consolas 11')]
+                                  # , [sg.InputText(f"MUSIC FOLDER: {self.MUSIC_FOLDER}", key='-MUSICFOLDERTEXT-', font='Consolas 11', use_readonly_for_disable=True, disabled=True)]
+                                  # , [sg.InputText(f"VIDEO FOLDER: {self.VIDEO_FOLDER}", key='-VIDEOFOLDERTEXT-', font='Consolas 11', use_readonly_for_disable=True, disabled=True)]
+                                  #   https://stackoverflow.com/a/69470136/1896134
                                   # , [sg.T('Other Folder Locations:')]
                                   # , [sg.Text(f"DESKTOP FOLDER: {self.DESKTOP_FOLDER}", key='-DESKTOPFOLDERTEXT-', font='Consolas 11')]
                                   # , [sg.Text(f"SCRIPT PATH:  {self.CURRENT_DIR}", key='-SCRIPTFOLDERTEXT-', font='Consolas 11')]
@@ -223,3 +226,19 @@ class App(object):
 if __name__ == "__main__":
     app = App()
     app.main()
+
+
+# def Example():
+#     with sg.FlexForm('Facebook problem') as form:
+#         form_rows = [[sg.Text('Enter your name address and city')],
+#                      [sg.Text('Name', size=(15, 1), justification='right'), sg.InputText('Name')],
+#                      [sg.Text('Address', size=(15, 1), justification='right'), sg.InputText('Address')],
+#                      [sg.Text('City', size=(15, 1), justification='right'), sg.InputText('City')],
+#                      [sg.Ok(), sg.Cancel()]]
+#         button, (name, address, city) = form.LayoutAndRead(form_rows)
+#     if button == 'Ok':
+#         sg.MsgBox('You entered', name, address, city)
+#     else:
+#         sg.MsgBoxError('Cancelled', 'User Cancelled')
+
+# Example()
