@@ -2,6 +2,18 @@
 Aggregation of Scripts to make life a bit more interesting.
 
 # Python
+## [pyTubeGUI.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyTubeGUI.py)
+* Download Any Youtube Video to an Audio or Video File Format.
+* Automatically Creates And Download Into These Folders
+  - Audio Files In MUSIC FOLDER: ~/Music/JayRizzoDL
+  - Video Files In Movies FOLDER: ~/Movies/JayRizzoDL
+
+```bash
+python3 pyTubeGUI.py
+```
+![20221231_121403](https://user-images.githubusercontent.com/22861678/210152312-600b4797-d396-4697-866d-d7620a0bdc62.png)
+
+# Python
 ## [pyGenHand.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenHand.py)
 * Generate a Random Hand of x# of cards. (poker, blackjack)
 
@@ -216,43 +228,104 @@ B: 216
 ## [pyGenRandStatement.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGenRandStatement.py)
 * Generate a Random String containing a random phrase.
 
-```python3
+```bash
+python3 pyGenRandStatement.py
 
+# Do Not Lie
 ```
 
 ## [pyGetSystemUpTime.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyGetSystemUpTime.py)
 * Generate your system uptime in a readable format from epoch time.
 
-```python3
+```bash
+python3 pyGetSystemUpTime.py
 
+# ('000', '000', '001', '00', '05', '53', '923530')
+# 000 Years, 000 Months, 001 Days, 00 Hours, 05 Minutes, 53 Seconds, 923530 MicroSeconds.
+# 000 Years, 000 Months, 001 Days, 00 Hours, 05 Minutes, 53 Seconds, 923530 MicroSeconds.
 ```
 
 ## [pyHeaderMac.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyHeaderMac.py)
 * Generate a standard python header
 
-```python3
+```bash
+python3 pyHeaderMac.py      
 
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# =============================================================================
+# Created Syst: macOS Monterey 12.6 (21G115) Kernel: Darwin 21.6.0
+# Created Plat: Python 3.10.8 ('v3.10.8:aaaf517424', 'Oct 11 2022 10:14:40')
+# Created By  : jayrizzo
+# Created Date: Sat Dec 31 12:18:45 2022 CST
+# Last ModDate: Sat Dec 31 12:18:45 2022 CST
+# =============================================================================
+# Notes:
+# =============================================================================
 ```
 
 ## [pyImageDownloader.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyImageDownloader.py)
 * Easily Download images from other sites.  * Supports (JPG/JPEG/PNG/TIFF/GIF/)
 
-```python3
+```bash
+python3 pyImageDownloader.py
 
+File was created: /Users/jayrizzo/Pictures/JayRizzoDL/logo-stackoverflow.png
 ```
+Or as an import:
+
+```python3
+from pyImageDownloader import ImageDownloader
+
+ImageDownloader("https://stackoverflow.design/assets/img/logos/so/logo-stackoverflow.png")
+```
+
 
 ## [pyListChecker.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyListChecker.py)
 * Generate a true or false if your list is containing another list.  Needed to prevent iteration problems when looping over lists.
 
-```python3
+```bash 
+python3 pyListChecker.py    
 
+# Examples are as follows:
+#    bb = ['test', 'consolidated list should return True']
+#    f = ListChecker().main(bb)
+#    print(f"{f}")
+#    # Returns: (False, ['test', 'consolidated list should return True'])
+#    try:
+#        aa = ['test', ['another list should return False']]
+#        d = ListChecker().main(aa)
+#        print(d)
+#    except Exception as e:
+#        print(f"{e}")
+#        # Returns: (True, ['test', ['another list should return False']], ERROR: This List Contains Another list Please Fix the list & try again!)
+#        exit()
+#
+#(False, ['test', 'consolidated list should return True'])
+#(True, ['test', ['another list should return False']], ERROR: This List Contains Another list Please Fix the list & try again!)
 ```
 
 ## [pyMacOsName.py](https://github.com/JayRizzo/JayRizzoTools/blob/master/pyMacOsName.py)
 * Generate your Mac Operating System Name.  Using `sw_vers` into python variables.
 
-```python3
+```python3 pyMacOsName.py
 
+# ('macOS', 'Monterey', '12.6', '21G115')
+#
+# Product Type        : macOS
+# Product Name        : Monterey
+# Product Version     : 12.6
+# Product Build Number: 21G115
+# 
+# Os Name for 11.4:           Big Sur
+# Os Name for 11.04:          Big Sur
+# Os Name for 11.14:          Big Sur
+# Os Name for 10.02:          X Jaguar
+# Os Name for 10.9:           X Mavericks
+# Os Name for 10.09.424.24:   X Mavericks
+# Os Name for 11.4:           Big Sur
+# Os Name for 11.4.2:         Big Sur
+# Os Name for 75.02:          ('',)
 ```
 
 # Shell
