@@ -21,6 +21,26 @@ FontPath = ''
 FontList = []
 GLOBList = []
 
+FontPath = r'/Applications'
+exists = filepathexist(FontPath)
+if exists:
+    FontPath = fr'{FontPath}/*.otf'
+    List_GLOB = glob.glob(FontPath)
+    FontList.extend(List_GLOB)
+
+FontList
+
+if exists:
+    FontPath = fr'{FontPath}/*.ttf'
+    List_GLOB = glob.glob(FontPath)
+    FontList.extend(List_GLOB)
+
+if exists:
+    FontPath = fr'{FontPath}/*.ttc'
+    List_GLOB = glob.glob(FontPath)
+    FontList.extend(List_GLOB)
+
+
 def getFontList():
     """Compile a list of all known fonts on the MacOS into a list.
     """
