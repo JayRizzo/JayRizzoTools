@@ -13,6 +13,7 @@
 from random import choice
 
 def rand_company_name():
+    """Return a Random Company Name."""
     xo = [
           "3M Company"
         , "A-Mark Precious Metals"
