@@ -112,14 +112,14 @@ Product Build Number: {pb}
     # Product Version     : 12.4
     # Product Build Number: 21F79
     # # Supports String Versions
-    print(f"{MacOSName().getOsName('11.4')}")           # Returns Name  Big Sur
-    print(f"{MacOSName().getOsName('11.04')}")          # Returns Name  Big Sur
-    print(f"{MacOSName().getOsName('11.14')}")          # Returns Name  Big Sur
-    print(f"{MacOSName().getOsName('10.02')}")          # Returns Name  Mojave
-    print(f"{MacOSName().getOsName('10.9')}")           # Returns Name  X Mavericks
-    print(f"{MacOSName().getOsName('10.09.424.24')}")   # Returns Name  X Mavericks  (ignores any subversion)
+    print(f"Os Name for 11.4:           {MacOSName().getOsName('11.4')}")           # Returns Name  Big Sur
+    print(f"Os Name for 11.04:          {MacOSName().getOsName('11.04')}")          # Returns Name  Big Sur
+    print(f"Os Name for 11.14:          {MacOSName().getOsName('11.14')}")          # Returns Name  Big Sur
+    print(f"Os Name for 10.02:          {MacOSName().getOsName('10.02')}")          # Returns Name  Mojave
+    print(f"Os Name for 10.9:           {MacOSName().getOsName('10.9')}")           # Returns Name  X Mavericks
+    print(f"Os Name for 10.09.424.24:   {MacOSName().getOsName('10.09.424.24')}")   # Returns Name  X Mavericks  (ignores any subversion)
     # # Supports Sets Versions
-    print(f"{MacOSName().getOsName(set({'11.4'}))}")    # Returns Name  Big Sur
-    print(f"{MacOSName().getOsName(set({'11.4.2'}))}")  # Returns Name  Big Sur
+    print(f"Os Name for 11.4:           {MacOSName().getOsName(set({'11.4'}))}")    # Returns Name  Big Sur
+    print(f"Os Name for 11.4.2:         {MacOSName().getOsName(set({'11.4.2'}))}")  # Returns Name  Big Sur
     # Error:
-    print(f"{MacOSName().getOsName('75.02')}")          # Returns Name  Empty Tuple
+    print(f"Os Name for 75.02:          {MacOSName().getOsName('75.02')}")          # Returns Name  Empty Tuple
